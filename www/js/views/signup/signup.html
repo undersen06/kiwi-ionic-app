@@ -1,0 +1,41 @@
+<ion-view>
+  <ion-header-bar class="bar item-input-inset bar-positive">
+  </ion-header-bar>
+<ion-content class="has-header" id="introduction"  has-bouncing="false">
+
+
+
+  <ion-slide-box>
+
+    <ion-slide>
+    Hola
+    </ion-slide>
+
+<ion-slide>
+  <ion-header-bar align-title="left" class="bar item-input-inset bar-positive">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios7-search placeholder-icon"></i>
+      <input type="search" placeholder="Search" ng-model="searchText" ng-change="" ng-model-options="{debounce: 150}">
+    </label>
+    <button class="button button-clear" ng-click="goBack();">
+      Cancel
+    </button>
+  </ion-header-bar>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item collection-repeat="region in regions | filter:searchText" ng-disable="region.isActive" ng-click="onSelect(item); $scope.searchResult = item">
+        {{region.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-slide>
+
+  </ion-slides>
+
+  </ion-content>
+
+
+
+
+
+</ion-view>

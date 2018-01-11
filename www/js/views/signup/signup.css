@@ -1,0 +1,45 @@
+#introduction .top-button {
+  color: white;
+  font-size: 19px;
+  top: 25px;
+  z-index: 999;
+  position: absolute;
+  right: 35px; }
+
+#introduction .fake-background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute; }
+  #introduction .fake-background.slider-one {
+    background-color: red; }
+  #introduction .fake-background.slider-two {
+    background-color: red; }
+  #introduction .fake-background.slider-three {
+    background-color: red; }
+
+#introduction .slider {
+  height: 100vh; }
+  #introduction .slider .slider-pager {
+    bottom: 10vh; }
+    #introduction .slider .slider-pager .slider-pager-page {
+      color: white; }
+
+#introduction .bottom-introduction {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  height: 43px;
+  background-color: rgba(126, 126, 126, 0.3);
+  left: 0; }
+  #introduction .bottom-introduction .bottom-button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 17px;
+    color: white; }
+    #introduction .bottom-introduction .bottom-button.bottom-button-right {
+      right: 35px; }
+    #introduction .bottom-introduction .bottom-button.bottom-button-left {
+      left: 35px; }
+
+/*# sourceMappingURL=signup.css.map */

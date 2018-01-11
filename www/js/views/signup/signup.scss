@@ -1,0 +1,82 @@
+#introduction{
+
+  .top-button{
+    color:white;
+    font-size:19px;
+    top:25px;
+    z-index:999;
+    position:absolute;
+    right: 35px;
+  }
+
+  .fake-background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    &.slider-one{
+      background-color:red;
+    }
+
+    &.slider-two{
+      background-color:red;
+    }
+
+    &.slider-three{
+      background-color:red;
+    }
+
+  }
+
+
+  .slider{
+    height: 100vh;
+
+    .slider-pager{
+      bottom:10vh;
+
+      .slider-pager-page{
+        color:white
+      }
+    }
+  }
+
+  .bottom-introduction{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 43px;
+    background-color: rgba(126,126,126,.30);
+    left: 0;
+
+      .bottom-button{
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+      font-size:17px;
+      color: rgb(255, 255, 255);
+
+    //
+    &.bottom-button-right{
+      right: 35px;
+    }
+
+    &.bottom-button-left{
+      left: 35px;
+    }
+  }
+}
+
+ion-slide-box{
+  ion-slide{
+    &.slider-box{
+
+    }
+  }
+}
+
+
+
+
+
+}

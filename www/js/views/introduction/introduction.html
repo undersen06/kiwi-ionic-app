@@ -1,0 +1,42 @@
+<ion-view ng-init="init();">
+  <ion-view title="Title" >
+    <ion-content id="introduction"  has-bouncing="false">
+
+      <div  class="slider-one fake-background">
+      </div>
+
+
+      <span class="top-button" ng-click="finish()">Saltar &nbsp;<i class="ion-chevron-right"></i></span>
+
+      <ion-slide-box on-slide-changed="slideHasChanged($index)">
+        <ion-slide class="slider-box">
+
+
+          <h3 class="title-slider-tuto">User</h3>
+          <h4 class="subtitle-slider-tuto">{{translations.TUTORIALS_TYPEUSER_USER}}</h4>
+
+
+        </ion-slide>
+        <ion-slide class="slider-box">
+
+          <h3 class="title-slider-tuto">Partner</h3>
+          <h4 class="subtitle-slider-tuto">{{translations.TUTORIALS_TYPEUSER_PARTNER}}</h4>
+        </ion-slide>
+
+
+        <ion-slide class="slider-box">
+          <h3 class="title-slider-tuto">Explorer</h3>
+          <h4 class="subtitle-slider-tuto">{{translations.TUTORIALS_TYPEUSER_EXPLORER}}</h4>
+        </ion-slide>
+
+
+      </ion-slide-box>
+
+      <div class="bottom-introduction">
+
+        <span class="bottom-button bottom-button-right" ng-click="goToLogin()">Siguiente</span>
+        <span class="bottom-button bottom-button-left" ng-click="goBack()" ng-if="shouldShowBackButton()">Atras</span>
+
+      </div>
+    </ion-content>
+  </ion-view>
